@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- This declaration tells the browser that this document is an HTML5 document -->
+<html lang="en">
+<!-- The lang attribute specifies the language of the page content as English -->
+
+<head>
+    <!-- The head section contains meta information about the page, not displayed on screen -->
+
+    <meta charset="UTF-8">
+    <!-- UTF-8 charset ensures the page can display a wide range of characters and symbols -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This makes the page responsive by setting the viewport to match the device screen width -->
+
+    <title>About Enioluwa Bankole</title>
+    <!-- The title appears on the browser tab -->
+
+    <style>
+        /* ── Reset & Base ── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #2d3748;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 16px;
+        }
+
+        /* ── Card Container ── */
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+            max-width: 680px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* ── Hero / Header Banner ── */
+        .card-header {
+            background: linear-gradient(135deg, #1a202c 0%, #2b6cb0 100%);
+            padding: 48px 40px 36px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        /* Avatar circle with initials */
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 3px solid rgba(255, 255, 255, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            letter-spacing: 1px;
+        }
+
+        .card-header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .card-header p.tagline {
+            font-size: 1rem;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+
+        /* ── Card Body ── */
+        .card-body {
+            padding: 36px 40px;
+        }
+
+        /* ── Section ── */
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #2b6cb0;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ebf4ff;
+            /* border-bottom: black; */
+        }
+
+        /* ── Info Grid ── */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .info-item {
+            background-color: #f7fafc;
+            border-radius: 10px;
+            padding: 14px 18px;
+            border-left: 4px solid #2b6cb0;
+        }
+
+        .info-item .label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #718096;
+            margin-bottom: 4px;
+        }
+
+        .info-item .value {
+            font-size: 0.97rem;
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        /* ── Summary Box ── */
+        .summary-box {
+            background-color: #ebf4ff;
+            border-radius: 10px;
+            padding: 20px 22px;
+            font-size: 0.97rem;
+            line-height: 1.8;
+            color: #2d3748;
+            border-left: 4px solid #2b6cb0;
+        }
+
+        /* ── Footer ── */
+        .card-footer {
+            background-color: #f7fafc;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            padding: 16px;
+            font-size: 0.8rem;
+            color: #a0aec0;
+        }
+
+        /* ── Responsive: stack grid on small screens ── */
+        @media (max-width: 480px) {
+            .card-header {
+                padding: 36px 24px 28px;
+            }
+
+            .card-body {
+                padding: 28px 24px;
+            }
+
+            .card-header h1 {
+                font-size: 1.6rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Internal CSS styles for the page layout and design -->
+</head>
+
+<body>
+    <!-- The body section contains all the visible content of the page -->
+
+    <!-- Main profile card container -->
+    <div class="card">
+
+        <!-- Header / hero banner with name and tagline -->
+        <div class="card-header">
+            <!-- Avatar circle showing initials -->
+            <div class="avatar">EB</div>
+            <h1>Enioluwa Bankole</h1>
+            <p class="tagline">Computer Science Student &mdash; Adekunle Ajasin University</p>
+        </div>
+
+        <!-- Main content body of the card -->
+        <div class="card-body">
+
+            <!-- Personal Information Section -->
+            <div class="section">
+                <h2 class="section-title">Personal Information</h2>
+                <!-- Two-column grid of info items -->
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <p class="label">Full Name</p>
+                        <p class="value">Enioluwa Bankole</p>
+                    </div>
+
+                    <div class="info-item">
+                        <p class="label">State of Origin</p>
+                        <p class="value">Ogun State</p>
+                    </div>
+
+                    <div class="info-item">
+                        <p class="label">Local Government Area</p>
+                        <p class="value">Odeda</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End of Personal Information Section -->
+
+            <!-- Academic Information Section -->
+            <div class="section">
+                <h2 class="section-title">Academic Information</h2>
+                <!-- Two-column grid of academic info items -->
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <p class="label">Level</p>
+                        <p class="value">300 Level</p>
+                    </div>
+
+                    <div class="info-item">
+                        <p class="label">Course of Study</p>
+                        <p class="value">Computer Science</p>
+                    </div>
+
+                    <div class="info-item">
+                        <p class="label">Institution</p>
+                        <p class="value">Adekunle Ajasin University</p>
+                    </div>
+
+                    <div class="info-item">
+                        <p class="label">Location</p>
+                        <p class="value">Ondo State, Nigeria</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End of Academic Information Section -->
+
+            <!-- Summary Section -->
+            <div class="section">
+                <h2 class="section-title">Summary</h2>
+                <!-- Summary paragraph inside a styled box -->
+                <div class="summary-box">
+                    <p>
+                        My name is <strong>Enioluwa Bankole</strong>. I am a <strong>300 Level Computer Science</strong>
+                        student at <strong>Adekunle Ajasin University</strong>, located in Ondo State, Nigeria.
+                        I hail from <strong>Odeda Local Government Area</strong> in <strong>Ogun State</strong>.
+                    </p>
+                </div>
+            </div>
+            <!-- End of Summary Section -->
+
+        </div>
+        <!-- End of card body -->
+
+        <!-- Footer with a small credit note -->
+        <div class="card-footer">
+            <p>&copy; 2026 Enioluwa Bankole &mdash; All rights reserved</p>
+        </div>
+
+    </div>
+    <!-- End of main profile card -->
+
+</body>
+<!-- End of the body section -->
+
+</html>
+<!-- End of the HTML document -->
